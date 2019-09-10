@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Move') {
       steps {
-        powershell 'move.ps1'
+        bat("xcopy C:\\Jenkins C:\\inetpub\\wwwroot\\ /O /X /E /H /K")
         archiveArtifacts '*/*'
       }
     }
