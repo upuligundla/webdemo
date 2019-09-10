@@ -1,2 +1,2 @@
 # webdemo
-Just a demo app
+Demo web page for Azure PoC
