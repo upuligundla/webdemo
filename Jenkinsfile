@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Move') {
       steps {
-        sh ('cp C:\\Jenkins\\* C:\\inetpub\\wwwroot\\')
+        sh ('cp C:\\\Jenkins\\\* C:\\\inetpub\\\wwwroot\\')
         archiveArtifacts '**/*'
       }
     }
