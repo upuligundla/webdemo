@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Move') {
       steps {
-        bat("xcopy C:\\Jenkins C:\\inetpub\\wwwroot\\ /O /X /E /H /K")
+        sh ("cp C:\\Jenkins\* C:\\inetpub\\wwwroot\\")
         archiveArtifacts '*/*'
       }
     }
